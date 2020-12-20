@@ -25,6 +25,7 @@ jobs:
           repository: evol3d/evol
           path: evol
           ref: v0.2
+          token: ${{ secrets.EVOL_PAT }}
       
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@v1.2.1
