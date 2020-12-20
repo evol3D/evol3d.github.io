@@ -28,9 +28,6 @@ jobs:
       - name: Doxygen Action
         uses: mattnotmitt/doxygen-action@v1.2.1
         with:
-          # Path to Doxyfile
-          doxyfile-path: ./evol_repo/Doxyfile
-          # Working directory
           working-directory: ./evol_repo
       
       - name: Copy Docs
