@@ -123,19 +123,155 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afeedb10da97a6eff9c1abc5d5da24b17"><td class="memItemLeft" align="right" valign="top"><a id="afeedb10da97a6eff9c1abc5d5da24b17"></a>
-EvModuleManagerResult&#160;</td><td class="memItemRight" valign="bottom"><b>ev_modulemanager_detect</b> (const char *module_dir)</td></tr>
+<tr class="memitem:afeedb10da97a6eff9c1abc5d5da24b17"><td class="memItemLeft" align="right" valign="top">EvModuleManagerResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modulemanager_8h.html#afeedb10da97a6eff9c1abc5d5da24b17">ev_modulemanager_detect</a> (const char *module_dir)</td></tr>
+<tr class="memdesc:afeedb10da97a6eff9c1abc5d5da24b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search module directory for valid modules and store them for future reference.  <a href="modulemanager_8h.html#afeedb10da97a6eff9c1abc5d5da24b17">More...</a><br /></td></tr>
 <tr class="separator:afeedb10da97a6eff9c1abc5d5da24b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68753525309f7783c539aa913d223777"><td class="memItemLeft" align="right" valign="top"><a id="a68753525309f7783c539aa913d223777"></a>
-evolmodule_t&#160;</td><td class="memItemRight" valign="bottom"><b>ev_modulemanager_openmodule_w_name</b> (const char *modname)</td></tr>
+<tr class="memitem:a68753525309f7783c539aa913d223777"><td class="memItemLeft" align="right" valign="top">evolmodule_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modulemanager_8h.html#a68753525309f7783c539aa913d223777">ev_modulemanager_openmodule_w_name</a> (const char *modname)</td></tr>
+<tr class="memdesc:a68753525309f7783c539aa913d223777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a module from the modules directory. Searches by name.  <a href="modulemanager_8h.html#a68753525309f7783c539aa913d223777">More...</a><br /></td></tr>
 <tr class="separator:a68753525309f7783c539aa913d223777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aeb1411bd949ddd03ff59cdbb2ecc01"><td class="memItemLeft" align="right" valign="top"><a id="a5aeb1411bd949ddd03ff59cdbb2ecc01"></a>
-evolmodule_t&#160;</td><td class="memItemRight" valign="bottom"><b>ev_modulemanager_openmodule_w_category</b> (const char *modcategory)</td></tr>
+<tr class="memitem:a5aeb1411bd949ddd03ff59cdbb2ecc01"><td class="memItemLeft" align="right" valign="top">evolmodule_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modulemanager_8h.html#a5aeb1411bd949ddd03ff59cdbb2ecc01">ev_modulemanager_openmodule_w_category</a> (const char *modcategory)</td></tr>
+<tr class="memdesc:a5aeb1411bd949ddd03ff59cdbb2ecc01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a module from the modules directory. Searches by category.  <a href="modulemanager_8h.html#a5aeb1411bd949ddd03ff59cdbb2ecc01">More...</a><br /></td></tr>
 <tr class="separator:a5aeb1411bd949ddd03ff59cdbb2ecc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1332865faffeb6d570dbf5350dd523f7"><td class="memItemLeft" align="right" valign="top"><a id="a1332865faffeb6d570dbf5350dd523f7"></a>
-evolmodule_t&#160;</td><td class="memItemRight" valign="bottom"><b>ev_modulemanager_openmodule</b> (const char *module_query)</td></tr>
+<tr class="memitem:a1332865faffeb6d570dbf5350dd523f7"><td class="memItemLeft" align="right" valign="top">evolmodule_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modulemanager_8h.html#a1332865faffeb6d570dbf5350dd523f7">ev_modulemanager_openmodule</a> (const char *module_query)</td></tr>
+<tr class="memdesc:a1332865faffeb6d570dbf5350dd523f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a module from the modules directory. Searches by both category and name.  <a href="modulemanager_8h.html#a1332865faffeb6d570dbf5350dd523f7">More...</a><br /></td></tr>
 <tr class="separator:a1332865faffeb6d570dbf5350dd523f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="afeedb10da97a6eff9c1abc5d5da24b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeedb10da97a6eff9c1abc5d5da24b17">&#9670;&nbsp;</a></span>ev_modulemanager_detect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EvModuleManagerResult ev_modulemanager_detect </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>module_dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Search module directory for valid modules and store them for future reference. </p>
+<p>Modules are considered valid if:</p><ol type="1">
+<li>They implement a <code>char *getMetadata()</code> function</li>
+<li><code>getMetadata()</code> returns a string representing a valid Lua table</li>
+</ol>
+<p>After loading the metadata of all valid modules, dependencies are checked to make sure that all module dependencies are fulfilled.</p>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>If successful, <code>EV_MODULEMANAGER_SUCCESS</code> is returned.</li>
+<li>If dependency validation fails, <code>EV_MODULEMANAGER_ERROR_DEPENDENCY_INVALID</code> is returned </li>
+</ul>
+</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="modulemanager_8c_source.html#l00032">32</a> of file <a class="el" href="modulemanager_8c_source.html">modulemanager.c</a>.</p>
+
+</div>
+</div>
+<a id="a1332865faffeb6d570dbf5350dd523f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1332865faffeb6d570dbf5350dd523f7">&#9670;&nbsp;</a></span>ev_modulemanager_openmodule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">evolmodule_t ev_modulemanager_openmodule </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>module_query</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a module from the modules directory. Searches by both category and name. </p>
+<p>The <code>module_query</code> can either be a category or a name. If it is the name then the modulesystem will look for a module that has the same name. If it's a category, then the modulesystem returns any module that matches the category.</p>
+<p>Due to modules internally being dynamic libraries, the operating system keeps a refcount for the number of places where they're used. Thus, calling this function doesn't guarantee that that the module will be loaded into memory as it may already be there, making the function simply return the same module and increase its refcount.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">module_query</td><td>Identifier for the module.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>If the module was found and successfully loaded, then it is returned.</li>
+<li>If the process fails, <code>NULL</code> is returned. </li>
+</ul>
+</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="modulemanager_8c_source.html#l00101">101</a> of file <a class="el" href="modulemanager_8c_source.html">modulemanager.c</a>.</p>
+
+</div>
+</div>
+<a id="a5aeb1411bd949ddd03ff59cdbb2ecc01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aeb1411bd949ddd03ff59cdbb2ecc01">&#9670;&nbsp;</a></span>ev_modulemanager_openmodule_w_category()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">evolmodule_t ev_modulemanager_openmodule_w_category </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>modcategory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a module from the modules directory. Searches by category. </p>
+<p>Due to modules internally being dynamic libraries, the operating system keeps a refcount for the number of places where they're used. Thus, calling this function doesn't guarantee that that the module will be loaded into memory as it may already be there, making the function simply return the same module and increase its refcount.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">modcategory</td><td>Category wanted for the module</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>If the module was found and successfully loaded, then it is returned.</li>
+<li>If the process fails, <code>NULL</code> is returned. </li>
+</ul>
+</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="modulemanager_8c_source.html#l00085">85</a> of file <a class="el" href="modulemanager_8c_source.html">modulemanager.c</a>.</p>
+
+</div>
+</div>
+<a id="a68753525309f7783c539aa913d223777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68753525309f7783c539aa913d223777">&#9670;&nbsp;</a></span>ev_modulemanager_openmodule_w_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">evolmodule_t ev_modulemanager_openmodule_w_name </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>modname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a module from the modules directory. Searches by name. </p>
+<p>Due to modules internally being dynamic libraries, the operating system keeps a refcount for the number of places where they're used. Thus, calling this function doesn't guarantee that that the module will be loaded into memory as it may already be there, making the function simply return the same module and increase its refcount.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">modname</td><td>Name of the module</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>If the module was found and successfully loaded, then it is returned.</li>
+<li>If the process fails, <code>NULL</code> is returned. </li>
+</ul>
+</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="modulemanager_8c_source.html#l00069">69</a> of file <a class="el" href="modulemanager_8c_source.html">modulemanager.c</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -78,36 +78,36 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="filesystem_8c.html#a1b7056a2c0fa300f31a2ceb2566e1ba2">   19</a></span>&#160;<a class="code" href="filesystem_8c.html#a1b7056a2c0fa300f31a2ceb2566e1ba2">find_contains_r</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *search_dir, <span class="keyword">const</span> <span class="keywordtype">char</span> *query, vec_t *res)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">char</span>           path[1000];</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">char</span> *         path_p = path;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">struct </span>dirent *dp;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  DIR *          dir = opendir(search_dir);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordflow">if</span> (!dir)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">while</span> ((dp = readdir(dir)) != NULL) {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span> (strcmp(dp-&gt;d_name, <span class="stringliteral">&quot;.&quot;</span>) &amp;&amp; strcmp(dp-&gt;d_name, <span class="stringliteral">&quot;..&quot;</span>)) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      strcpy(path, search_dir);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      strcat(path, <span class="stringliteral">&quot;/&quot;</span>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      strcat(path, dp-&gt;d_name);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordflow">if</span> (strstr(path, query)) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="vec_8h.html#a2ad21f96bbfcc396623e926910321ac4">vec_push</a>(res, &amp;path_p);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="filesystem_8c.html#a1b7056a2c0fa300f31a2ceb2566e1ba2">find_contains_r</a>(path, query, res);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  closedir(dir);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="filesystem_8c.html#a1b7056a2c0fa300f31a2ceb2566e1ba2">   12</a></span>&#160;<a class="code" href="filesystem_8c.html#a1b7056a2c0fa300f31a2ceb2566e1ba2">find_contains_r</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *search_dir, <span class="keyword">const</span> <span class="keywordtype">char</span> *query, vec_t *res)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keywordtype">char</span>           path[1000];</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">char</span> *         path_p = path;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">struct </span>dirent *dp;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  DIR *          dir = opendir(search_dir);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordflow">if</span> (!dir)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordflow">while</span> ((dp = readdir(dir)) != NULL) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (strcmp(dp-&gt;d_name, <span class="stringliteral">&quot;.&quot;</span>) &amp;&amp; strcmp(dp-&gt;d_name, <span class="stringliteral">&quot;..&quot;</span>)) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      strcpy(path, search_dir);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      strcat(path, <span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      strcat(path, dp-&gt;d_name);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keywordflow">if</span> (strstr(path, query)) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="vec_8h.html#a2ad21f96bbfcc396623e926910321ac4">vec_push</a>(res, &amp;path_p);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <a class="code" href="filesystem_8c.html#a1b7056a2c0fa300f31a2ceb2566e1ba2">find_contains_r</a>(path, query, res);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  closedir(dir);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="afilesystem_8h_html"><div class="ttname"><a href="filesystem_8h.html">filesystem.h</a></div></div>
-<div class="ttc" id="afilesystem_8c_html_a1b7056a2c0fa300f31a2ceb2566e1ba2"><div class="ttname"><a href="filesystem_8c.html#a1b7056a2c0fa300f31a2ceb2566e1ba2">find_contains_r</a></div><div class="ttdeci">void find_contains_r(const char *search_dir, const char *query, vec_t *res)</div><div class="ttdoc">A function that iterates recursively over files in a directory and returns files that contain a certa...</div><div class="ttdef"><b>Definition:</b> <a href="filesystem_8c_source.html#l00019">filesystem.c:19</a></div></div>
+<div class="ttc" id="afilesystem_8c_html_a1b7056a2c0fa300f31a2ceb2566e1ba2"><div class="ttname"><a href="filesystem_8c.html#a1b7056a2c0fa300f31a2ceb2566e1ba2">find_contains_r</a></div><div class="ttdeci">void find_contains_r(const char *search_dir, const char *query, vec_t *res)</div><div class="ttdoc">A function that iterates recursively over files in a directory and returns files that contain a certa...</div><div class="ttdef"><b>Definition:</b> <a href="filesystem_8c_source.html#l00012">filesystem.c:12</a></div></div>
 <div class="ttc" id="avec_8h_html_a2ad21f96bbfcc396623e926910321ac4"><div class="ttname"><a href="vec_8h.html#a2ad21f96bbfcc396623e926910321ac4">vec_push</a></div><div class="ttdeci">int32_t vec_push(vec_t *v, void *val)</div><div class="ttdoc">A function that copies a value to the end of a vector. If a copy function was passed while initializi...</div><div class="ttdef"><b>Definition:</b> <a href="vec_8c_source.html#l00079">vec.c:79</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

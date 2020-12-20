@@ -87,16 +87,129 @@ Include dependency graph for module.c:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a46d76100656fb7355ba5e273225e5dce"><td class="memItemLeft" align="right" valign="top"><a id="a46d76100656fb7355ba5e273225e5dce"></a>
-evolmodule_t&#160;</td><td class="memItemRight" valign="bottom"><b>ev_module_open</b> (const char *modpath)</td></tr>
+<tr class="memitem:a46d76100656fb7355ba5e273225e5dce"><td class="memItemLeft" align="right" valign="top">evolmodule_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module_8c.html#a46d76100656fb7355ba5e273225e5dce">ev_module_open</a> (const char *modpath)</td></tr>
+<tr class="memdesc:a46d76100656fb7355ba5e273225e5dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a module into memory.  <a href="module_8c.html#a46d76100656fb7355ba5e273225e5dce">More...</a><br /></td></tr>
 <tr class="separator:a46d76100656fb7355ba5e273225e5dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae20e4b0066b35f3771cb89086f47e2ea"><td class="memItemLeft" align="right" valign="top"><a id="ae20e4b0066b35f3771cb89086f47e2ea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ev_module_close</b> (evolmodule_t module)</td></tr>
+<tr class="memitem:ae20e4b0066b35f3771cb89086f47e2ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module_8c.html#ae20e4b0066b35f3771cb89086f47e2ea">ev_module_close</a> (evolmodule_t module)</td></tr>
+<tr class="memdesc:ae20e4b0066b35f3771cb89086f47e2ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads a module.  <a href="module_8c.html#ae20e4b0066b35f3771cb89086f47e2ea">More...</a><br /></td></tr>
 <tr class="separator:ae20e4b0066b35f3771cb89086f47e2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9641a0bb760a1e13b69fa9ddb90e7a2e"><td class="memItemLeft" align="right" valign="top"><a id="a9641a0bb760a1e13b69fa9ddb90e7a2e"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>ev_module_getfn</b> (evolmodule_t module, const char *fn_name)</td></tr>
+<tr class="memitem:a9641a0bb760a1e13b69fa9ddb90e7a2e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module_8c.html#a9641a0bb760a1e13b69fa9ddb90e7a2e">ev_module_getfn</a> (evolmodule_t module, const char *fn_name)</td></tr>
+<tr class="memdesc:a9641a0bb760a1e13b69fa9ddb90e7a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve function from module.  <a href="module_8c.html#a9641a0bb760a1e13b69fa9ddb90e7a2e">More...</a><br /></td></tr>
 <tr class="separator:a9641a0bb760a1e13b69fa9ddb90e7a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ae20e4b0066b35f3771cb89086f47e2ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20e4b0066b35f3771cb89086f47e2ea">&#9670;&nbsp;</a></span>ev_module_close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ev_module_close </td>
+          <td>(</td>
+          <td class="paramtype">evolmodule_t&#160;</td>
+          <td class="paramname"><em>module</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unloads a module. </p>
+<p>Due to modules internally being dynamic libraries, the operating system keeps a refcount for the number of places where they're used. So there are no guarantees that calling this function will call the module's destructor as it may be in use in other areas of the program.</p>
+<dl class="section remark"><dt>Remarks</dt><dd>It's highly recommended to call <code>ev_module_open(...)</code> and <code>ev_module_close(...)</code> in pairs and to never share the returned module handles with external modules so that maintaining a defined behaviour is easier.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">module</td><td>The module to unload </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="module_8c_source.html#l00028">28</a> of file <a class="el" href="module_8c_source.html">module.c</a>.</p>
+
+</div>
+</div>
+<a id="a9641a0bb760a1e13b69fa9ddb90e7a2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9641a0bb760a1e13b69fa9ddb90e7a2e">&#9670;&nbsp;</a></span>ev_module_getfn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* ev_module_getfn </td>
+          <td>(</td>
+          <td class="paramtype">evolmodule_t&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fn_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieve function from module. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">module</td><td>The module to search for the function </td></tr>
+    <tr><td class="paramname">func_name</td><td>Name of the function to load</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the function was found, a function pointer is returned. Otherwise, <code>NULL</code> is returned. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="module_8c_source.html#l00043">43</a> of file <a class="el" href="module_8c_source.html">module.c</a>.</p>
+
+</div>
+</div>
+<a id="a46d76100656fb7355ba5e273225e5dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d76100656fb7355ba5e273225e5dce">&#9670;&nbsp;</a></span>ev_module_open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">evolmodule_t ev_module_open </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>modpath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads a module into memory. </p>
+<p>Due to modules internally being dynamic libraries, the operating system keeps a refcount for the number of places where they're used. Thus, calling this function doesn't guarantee that that the module will be loaded into memory as it may already be there, making the function simply return the same module and increase its refcount.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">modpath</td><td>Path to the module</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>If the module was found and successfully loaded, then it is returned.</li>
+<li>If the process fails, <code>NULL</code> is returned. </li>
+</ul>
+</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="module_8c_source.html#l00011">11</a> of file <a class="el" href="module_8c_source.html">module.c</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
