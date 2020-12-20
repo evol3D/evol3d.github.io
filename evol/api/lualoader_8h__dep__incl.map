@@ -1,6 +1,6 @@
 <map id="include/evol/core/lualoader.h" name="include/evol/core/lualoader.h">
-<area shape="rect" id="node1" title=" " alt="" coords="115,5,324,32"/>
-<area shape="rect" id="node2" href="$evol_8c.html" title=" " alt="" coords="5,80,121,107"/>
-<area shape="rect" id="node3" href="$lualoader_8c.html" title=" " alt="" coords="145,80,293,107"/>
-<area shape="rect" id="node4" href="$modulemanager_8c.html" title=" " alt="" coords="318,80,513,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="111,5,297,32"/>
+<area shape="rect" id="node2" href="$evol_8c.html" title=" " alt="" coords="5,80,112,107"/>
+<area shape="rect" id="node3" href="$lualoader_8c.html" title=" " alt="" coords="137,80,271,107"/>
+<area shape="rect" id="node4" href="$modulemanager_8c.html" title=" " alt="" coords="295,80,470,107"/>
 </map>
