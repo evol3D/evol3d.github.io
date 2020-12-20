@@ -16,14 +16,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        with:
-          path: evolpages
       
       - name: Checkout
         uses: actions/checkout@v2.3.4
         with:
           repository: evol3d/evol
-          path: evol
+          path: $GITHUB_WORKSPACE/evol_repo
           ref: v0.2
           token: ${{ secrets.EVOL_PAT }}
       
@@ -31,13 +29,13 @@ jobs:
         uses: mattnotmitt/doxygen-action@v1.2.1
         with:
           # Path to Doxyfile
-          doxyfile-path: evol/Doxyfile
+          doxyfile-path: $GITHUB_WORKSPACE/evol_repo/Doxyfile
           # Working directory
-          working-directory: evol
+          working-directory: $GITHUB_WORKSPACE/evol_repo
       
       - name: Copy Docs
         run: |
-          cp -r evol/.doxygen/html/* evolpages/evol/api/
+          cp -r $GITHUB_WORKSPACE/evol_repo/.doxygen/html/* ./evol/api/
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
@@ -47,10 +45,5 @@ jobs:
           
           commit_options: '--no-verify --signoff'
 
-          # Optional local file path to the repository
-          # Defaults to the root of the repository
-          repository: evol
-
           # Optional commit user and author settings
           commit_author: Robear Selwans <robear.selwans@outlook.com> # defaults to author of the commit that triggered the run
-
