@@ -1,14 +1,15 @@
 <map id="include/evol/common/ev_macros.h" name="include/evol/common/ev_macros.h">
-<area shape="rect" id="node1" title=" " alt="" coords="280,5,425,47"/>
-<area shape="rect" id="node2" href="$resdef_8h.html" title=" " alt="" coords="265,95,440,121"/>
-<area shape="rect" id="node3" href="$ev__types_8h.html" title=" " alt="" coords="336,169,481,211"/>
-<area shape="rect" id="node4" href="$core_2evol_8h.html" title=" " alt="" coords="21,266,180,293"/>
-<area shape="rect" id="node7" href="$lualoader_8h.html" title=" " alt="" coords="205,266,391,293"/>
-<area shape="rect" id="node10" href="$modulemanager_8h.html" title=" " alt="" coords="415,266,642,293"/>
-<area shape="rect" id="node11" href="$filesystem_8h.html" title=" " alt="" coords="667,259,785,300"/>
-<area shape="rect" id="node5" href="$evol_8h_source.html" title=" " alt="" coords="5,348,135,375"/>
-<area shape="rect" id="node6" href="$evol_8c.html" title=" " alt="" coords="159,348,266,375"/>
-<area shape="rect" id="node8" href="$lualoader_8c.html" title=" " alt="" coords="291,348,425,375"/>
-<area shape="rect" id="node9" href="$modulemanager_8c.html" title=" " alt="" coords="449,348,624,375"/>
-<area shape="rect" id="node12" href="$filesystem_8c.html" title=" " alt="" coords="656,348,796,375"/>
+<area shape="rect" id="node1" title=" " alt="" coords="121,5,266,47"/>
+<area shape="rect" id="node2" href="$evolmod_8h_source.html" title=" " alt="" coords="5,177,160,203"/>
+<area shape="rect" id="node4" href="$resdef_8h.html" title=" " alt="" coords="189,95,363,121"/>
+<area shape="rect" id="node3" href="$evol_8c.html" title=" " alt="" coords="185,348,292,375"/>
+<area shape="rect" id="node5" href="$ev__types_8h.html" title=" " alt="" coords="314,169,459,211"/>
+<area shape="rect" id="node6" href="$core_2evol_8h.html" title=" " alt="" coords="81,266,239,293"/>
+<area shape="rect" id="node8" href="$lualoader_8h.html" title=" " alt="" coords="264,266,451,293"/>
+<area shape="rect" id="node11" href="$modulemanager_8h.html" title=" " alt="" coords="475,266,701,293"/>
+<area shape="rect" id="node12" href="$filesystem_8h.html" title=" " alt="" coords="726,259,845,300"/>
+<area shape="rect" id="node7" href="$evol_8h_source.html" title=" " alt="" coords="31,348,161,375"/>
+<area shape="rect" id="node9" href="$lualoader_8c.html" title=" " alt="" coords="317,348,451,375"/>
+<area shape="rect" id="node10" href="$modulemanager_8c.html" title=" " alt="" coords="501,348,675,375"/>
+<area shape="rect" id="node13" href="$filesystem_8c.html" title=" " alt="" coords="715,348,855,375"/>
 </map>

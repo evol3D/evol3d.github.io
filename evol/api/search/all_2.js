@@ -32,8 +32,9 @@ var searchData=
   ['evol_5finit_39',['evol_init',['../core_2evol_8h.html#af522814a1546cba6c8ee65f6d223d66c',1,'evol_init(evolengine_t *engine):&#160;evol.c'],['../evol_8c.html#ae3b0c5d7cbb03b514ead0a768503c9ff',1,'evol_init(evolengine_t *evengine):&#160;evol.c']]],
   ['evol_5floadmodule_40',['evol_loadmodule',['../core_2evol_8h.html#aa4456b2e5f2d6d4f2dddc1a6f51fd9d1',1,'evol_loadmodule(const char *modquery):&#160;evol.c'],['../evol_8c.html#aa4456b2e5f2d6d4f2dddc1a6f51fd9d1',1,'evol_loadmodule(const char *modquery):&#160;evol.c']]],
   ['evol_5fparse_5fargs_41',['evol_parse_args',['../core_2evol_8h.html#a77e1513a604de0cacfa475cd8af2e674',1,'evol_parse_args(evolengine_t *engine, int argc, char **argv):&#160;evol.c'],['../evol_8c.html#aacebcc44f25106770f0201a528b86749',1,'evol_parse_args(evolengine_t *evengine, int argc, char **argv):&#160;evol.c']]],
-  ['evol_5funloadmodule_42',['evol_unloadmodule',['../core_2evol_8h.html#a86405330907c19d74b7a69c141c1e2e8',1,'evol_unloadmodule(evolmodule_t module):&#160;evol.c'],['../evol_8c.html#a86405330907c19d74b7a69c141c1e2e8',1,'evol_unloadmodule(evolmodule_t module):&#160;evol.c']]],
-  ['evolengine_43',['evolengine',['../evol_8c.html#structevolengine',1,'']]],
-  ['evolresults_2eh_44',['evolresults.h',['../evolresults_8h.html',1,'']]],
-  ['evresult_45',['EvResult',['../resdef_8h.html#ab52f830459f95730db240027beb83a10',1,'resdef.h']]]
+  ['evol_5fstart_42',['evol_start',['../core_2evol_8h.html#a473ee5bb8ac08c1bd780af3171f5b605',1,'evol_start(evolengine_t *engine):&#160;evol.c'],['../evol_8c.html#a473ee5bb8ac08c1bd780af3171f5b605',1,'evol_start(evolengine_t *engine):&#160;evol.c']]],
+  ['evol_5funloadmodule_43',['evol_unloadmodule',['../core_2evol_8h.html#a86405330907c19d74b7a69c141c1e2e8',1,'evol_unloadmodule(evolmodule_t module):&#160;evol.c'],['../evol_8c.html#a86405330907c19d74b7a69c141c1e2e8',1,'evol_unloadmodule(evolmodule_t module):&#160;evol.c']]],
+  ['evolengine_44',['evolengine',['../evol_8c.html#structevolengine',1,'']]],
+  ['evolresults_2eh_45',['evolresults.h',['../evolresults_8h.html',1,'']]],
+  ['evresult_46',['EvResult',['../resdef_8h.html#ab52f830459f95730db240027beb83a10',1,'resdef.h']]]
 ];

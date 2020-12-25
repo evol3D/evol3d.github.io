@@ -71,22 +71,40 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="ev__types_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="ev__types_8h.html#ae8ca6e50cbed3dd5742544784645f9ab">    9</a></span>&#160;<span class="preprocessor">#define RES_PREFIX EV_ </span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="ev__types_8h.html#a055e8093247f483268e67e06c8d8da6e">   10</a></span>&#160;<span class="preprocessor">#define RES_FILE &lt;evol/meta/results/evolresults.h&gt; </span></div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="ev__types_8h.html#a32f9c116828307dd6386b00145e907bc">   11</a></span>&#160;<span class="preprocessor">#define RES_TYPE EvResult </span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;evol/meta/resdef.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vec_8h.html">evol/common/types/vec.h</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;evol/extern/sds.h&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">void</span> *evolmodule_t;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="ev__types_8h.html#ae8ca6e50cbed3dd5742544784645f9ab">    7</a></span>&#160;<span class="preprocessor">#define RES_PREFIX EV_ </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="ev__types_8h.html#a055e8093247f483268e67e06c8d8da6e">    8</a></span>&#160;<span class="preprocessor">#define RES_FILE &lt;evol/meta/results/evolresults.h&gt; </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define RES_TYPE                                                               \</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="ev__types_8h.html#a32f9c116828307dd6386b00145e907bc">   10</a></span>&#160;<span class="preprocessor">  EvResult </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;evol/meta/resdef.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vec_8h.html">evol/common/types/vec.h</a>&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;evol/extern/sds.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">void</span> *evolmodule_t;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="ev__types_8h.html#ae1e1bd08d3726a76cb8f424948b327bc">   21</a></span>&#160;<span class="keyword">typedef</span> vec_t <a class="code" href="ev__types_8h.html#ae1e1bd08d3726a76cb8f424948b327bc">sdsvec_t</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;sdsveccopy(<span class="keywordtype">void</span> *dst, <span class="keyword">const</span> <span class="keywordtype">void</span> *src)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  *(sds*)dst = sdsnew(*(sds*)src);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;sdsvecdestr(<span class="keywordtype">void</span> *elem)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  sdsfree(*(sds*)elem);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="ev__types_8h.html#acc71304fe82191070eb9c8c3ccf794a6">   45</a></span>&#160;<span class="preprocessor">#define sdsvec_init() vec_init_impl(sizeof(sds), sdsveccopy, sdsvecdestr)</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="avec_8h_html"><div class="ttname"><a href="vec_8h.html">vec.h</a></div></div>
+<div class="ttc" id="aev__types_8h_html_ae1e1bd08d3726a76cb8f424948b327bc"><div class="ttname"><a href="ev__types_8h.html#ae1e1bd08d3726a76cb8f424948b327bc">sdsvec_t</a></div><div class="ttdeci">vec_t sdsvec_t</div><div class="ttdoc">A specialized vector for sds (dynamic strings)</div><div class="ttdef"><b>Definition:</b> <a href="ev__types_8h_source.html#l00021">ev_types.h:21</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

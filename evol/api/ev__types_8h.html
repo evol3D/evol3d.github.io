@@ -122,14 +122,22 @@ Macros</h2></td></tr>
 <tr class="separator:ae8ca6e50cbed3dd5742544784645f9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a055e8093247f483268e67e06c8d8da6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev__types_8h.html#a055e8093247f483268e67e06c8d8da6e">RES_FILE</a>&#160;&#160;&#160;&lt;evol/meta/results/evolresults.h&gt;</td></tr>
 <tr class="separator:a055e8093247f483268e67e06c8d8da6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f9c116828307dd6386b00145e907bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev__types_8h.html#a32f9c116828307dd6386b00145e907bc">RES_TYPE</a>&#160;&#160;&#160;<a class="el" href="resdef_8h.html#ab52f830459f95730db240027beb83a10">EvResult</a></td></tr>
+<tr class="memitem:a32f9c116828307dd6386b00145e907bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev__types_8h.html#a32f9c116828307dd6386b00145e907bc">RES_TYPE</a>&#160;&#160;&#160;  <a class="el" href="resdef_8h.html#ab52f830459f95730db240027beb83a10">EvResult</a></td></tr>
 <tr class="separator:a32f9c116828307dd6386b00145e907bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc71304fe82191070eb9c8c3ccf794a6"><td class="memItemLeft" align="right" valign="top"><a id="acc71304fe82191070eb9c8c3ccf794a6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev__types_8h.html#acc71304fe82191070eb9c8c3ccf794a6">sdsvec_init</a>()&#160;&#160;&#160;<a class="el" href="vec_8c.html#ac146fa93d47df153bd5b2aa19a39bd17">vec_init_impl</a>(sizeof(sds), sdsveccopy, sdsvecdestr)</td></tr>
+<tr class="memdesc:acc71304fe82191070eb9c8c3ccf794a6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>vec_init</code> equivalent that takes no arguments and initializes the vector with the default values for sds. <br /></td></tr>
+<tr class="separator:acc71304fe82191070eb9c8c3ccf794a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:abc6ac3144d914568d5161d1bf9f7d053"><td class="memItemLeft" align="right" valign="top"><a id="abc6ac3144d914568d5161d1bf9f7d053"></a>
 typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>evolmodule_t</b></td></tr>
 <tr class="separator:abc6ac3144d914568d5161d1bf9f7d053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e1bd08d3726a76cb8f424948b327bc"><td class="memItemLeft" align="right" valign="top"><a id="ae1e1bd08d3726a76cb8f424948b327bc"></a>
+typedef vec_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev__types_8h.html#ae1e1bd08d3726a76cb8f424948b327bc">sdsvec_t</a></td></tr>
+<tr class="memdesc:ae1e1bd08d3726a76cb8f424948b327bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A specialized vector for sds (dynamic strings) <br /></td></tr>
+<tr class="separator:ae1e1bd08d3726a76cb8f424948b327bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a055e8093247f483268e67e06c8d8da6e"></a>
@@ -145,7 +153,7 @@ typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>evolmodule_
 </div><div class="memdoc">
 <p>The file in which the result types are defined. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev__types_8h_source.html#l00010">10</a> of file <a class="el" href="ev__types_8h_source.html">ev_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev__types_8h_source.html#l00008">8</a> of file <a class="el" href="ev__types_8h_source.html">ev_types.h</a>.</p>
 
 </div>
 </div>
@@ -162,7 +170,7 @@ typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>evolmodule_
 </div><div class="memdoc">
 <p>The prefix of all error types defined. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev__types_8h_source.html#l00009">9</a> of file <a class="el" href="ev__types_8h_source.html">ev_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev__types_8h_source.html#l00007">7</a> of file <a class="el" href="ev__types_8h_source.html">ev_types.h</a>.</p>
 
 </div>
 </div>
@@ -173,13 +181,13 @@ typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>evolmodule_
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RES_TYPE&#160;&#160;&#160;<a class="el" href="resdef_8h.html#ab52f830459f95730db240027beb83a10">EvResult</a></td>
+          <td class="memname">#define RES_TYPE&#160;&#160;&#160;  <a class="el" href="resdef_8h.html#ab52f830459f95730db240027beb83a10">EvResult</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>The name of the result enum that this file defines. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev__types_8h_source.html#l00011">11</a> of file <a class="el" href="ev__types_8h_source.html">ev_types.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev__types_8h_source.html#l00010">10</a> of file <a class="el" href="ev__types_8h_source.html">ev_types.h</a>.</p>
 
 </div>
 </div>

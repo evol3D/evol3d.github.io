@@ -72,8 +72,7 @@ $(function() {
 <div class="title">modulemanager.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="vec_8h_source.html">evol/common/types/vec.h</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="modulemanager_8h_source.html">evol/core/modulemanager.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="modulemanager_8h_source.html">evol/core/modulemanager.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="lualoader_8h_source.html">evol/core/lualoader.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="filesystem_8h_source.html">evol/utils/filesystem.h</a>&gt;</code><br />
 <code>#include &lt;src/lua/modulesystem.lua.h&gt;</code><br />
@@ -82,23 +81,23 @@ Include dependency graph for modulemanager.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="modulemanager_8c__incl.png" border="0" usemap="#asrc_2core_2modulemanager_8c" alt=""/></div>
 <map name="src_2core_2modulemanager_8c" id="asrc_2core_2modulemanager_8c">
-<area shape="rect" title=" " alt="" coords="282,5,457,32"/>
+<area shape="rect" title=" " alt="" coords="470,5,645,32"/>
+<area shape="rect" href="modulemanager_8h.html" title=" " alt="" coords="560,80,741,107"/>
+<area shape="rect" href="lualoader_8h.html" title=" " alt="" coords="395,80,536,107"/>
+<area shape="rect" href="filesystem_8h.html" title=" " alt="" coords="224,80,371,107"/>
+<area shape="rect" title=" " alt="" coords="765,80,944,107"/>
+<area shape="rect" href="ev__types_8h.html" title=" " alt="" coords="249,155,415,181"/>
+<area shape="rect" href="resdef_8h.html" title=" " alt="" coords="494,229,623,256"/>
+<area shape="rect" href="module_8h.html" title=" " alt="" coords="596,155,727,181"/>
+<area shape="rect" title=" " alt="" coords="179,304,243,331"/>
+<area shape="rect" title=" " alt="" coords="395,229,469,256"/>
 <area shape="rect" href="vec_8h.html" title=" " alt="" coords="5,229,176,256"/>
-<area shape="rect" href="modulemanager_8h.html" title=" " alt="" coords="464,80,645,107"/>
-<area shape="rect" href="lualoader_8h.html" title=" " alt="" coords="299,80,440,107"/>
-<area shape="rect" href="filesystem_8h.html" title=" " alt="" coords="128,80,275,107"/>
-<area shape="rect" title=" " alt="" coords="669,80,848,107"/>
+<area shape="rect" href="sds_8h_source.html" title=" " alt="" coords="251,229,371,256"/>
+<area shape="rect" href="ev__macros_8h.html" title=" " alt="" coords="471,304,649,331"/>
+<area shape="rect" href="evolresults_8h.html" title=" " alt="" coords="674,304,873,331"/>
 <area shape="rect" title=" " alt="" coords="59,304,122,331"/>
-<area shape="rect" href="ev__types_8h.html" title=" " alt="" coords="231,155,398,181"/>
-<area shape="rect" href="resdef_8h.html" title=" " alt="" coords="590,229,719,256"/>
-<area shape="rect" href="module_8h.html" title=" " alt="" coords="487,155,617,181"/>
-<area shape="rect" title=" " alt="" coords="276,304,340,331"/>
-<area shape="rect" title=" " alt="" coords="200,229,275,256"/>
-<area shape="rect" href="sds_8h_source.html" title=" " alt="" coords="349,229,469,256"/>
-<area shape="rect" href="ev__macros_8h.html" title=" " alt="" coords="568,304,747,331"/>
-<area shape="rect" href="evolresults_8h.html" title=" " alt="" coords="771,304,970,331"/>
-<area shape="rect" title=" " alt="" coords="457,304,543,331"/>
-<area shape="rect" title=" " alt="" coords="365,304,433,331"/>
+<area shape="rect" title=" " alt="" coords="359,304,446,331"/>
+<area shape="rect" title=" " alt="" coords="267,304,335,331"/>
 </map>
 </div>
 </div>
@@ -106,12 +105,6 @@ Include dependency graph for modulemanager.c:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9de55a0ffe18b87a108147f0f240f92d"><td class="memItemLeft" align="right" valign="top"><a id="a9de55a0ffe18b87a108147f0f240f92d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sdsveccopy</b> (sds *dst, const sds *src)</td></tr>
-<tr class="separator:a9de55a0ffe18b87a108147f0f240f92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a030d811bc2d846707820be8990aaca9c"><td class="memItemLeft" align="right" valign="top"><a id="a030d811bc2d846707820be8990aaca9c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sdsvecdestr</b> (sds *elem)</td></tr>
-<tr class="separator:a030d811bc2d846707820be8990aaca9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeedb10da97a6eff9c1abc5d5da24b17"><td class="memItemLeft" align="right" valign="top">EvModuleManagerResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="modulemanager_8c.html#afeedb10da97a6eff9c1abc5d5da24b17">ev_modulemanager_detect</a> (const char *module_dir)</td></tr>
 <tr class="memdesc:afeedb10da97a6eff9c1abc5d5da24b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search module directory for valid modules and store them for future reference.  <a href="modulemanager_8c.html#afeedb10da97a6eff9c1abc5d5da24b17">More...</a><br /></td></tr>
 <tr class="separator:afeedb10da97a6eff9c1abc5d5da24b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +147,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>sdsvecdestr</b> (sds 
 </ul>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="modulemanager_8c_source.html#l00032">32</a> of file <a class="el" href="modulemanager_8c_source.html">modulemanager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="modulemanager_8c_source.html#l00019">19</a> of file <a class="el" href="modulemanager_8c_source.html">modulemanager.c</a>.</p>
 
 </div>
 </div>
@@ -189,7 +182,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>sdsvecdestr</b> (sds 
 </ul>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="modulemanager_8c_source.html#l00101">101</a> of file <a class="el" href="modulemanager_8c_source.html">modulemanager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="modulemanager_8c_source.html#l00088">88</a> of file <a class="el" href="modulemanager_8c_source.html">modulemanager.c</a>.</p>
 
 </div>
 </div>
@@ -223,7 +216,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>sdsvecdestr</b> (sds 
 </ul>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="modulemanager_8c_source.html#l00085">85</a> of file <a class="el" href="modulemanager_8c_source.html">modulemanager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="modulemanager_8c_source.html#l00072">72</a> of file <a class="el" href="modulemanager_8c_source.html">modulemanager.c</a>.</p>
 
 </div>
 </div>
@@ -257,7 +250,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>sdsvecdestr</b> (sds 
 </ul>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="modulemanager_8c_source.html#l00069">69</a> of file <a class="el" href="modulemanager_8c_source.html">modulemanager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="modulemanager_8c_source.html#l00056">56</a> of file <a class="el" href="modulemanager_8c_source.html">modulemanager.c</a>.</p>
 
 </div>
 </div>

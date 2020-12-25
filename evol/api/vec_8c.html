@@ -113,6 +113,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a2ad21f96bbfcc396623e926910321ac4"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vec_8c.html#a2ad21f96bbfcc396623e926910321ac4">vec_push</a> (vec_t *v, void *val)</td></tr>
 <tr class="memdesc:a2ad21f96bbfcc396623e926910321ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that copies a value to the end of a vector. If a copy function was passed while initializing the vector, then this function is called to copy the new element into the vector. Otherwise, memcpy is used with a length of <code><a class="el" href="vec_8c.html#a95f27e21e2b163351d91785bec8c036f" title="The size (in bytes) of memory that each element takes.">vec_meta.elemsize</a></code>. If a resize is needed but fails due to 'OOM' issues, then the vector is left unchanged and a non-zero is returned.  <a href="vec_8c.html#a2ad21f96bbfcc396623e926910321ac4">More...</a><br /></td></tr>
 <tr class="separator:a2ad21f96bbfcc396623e926910321ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5ad7d877c15eb3915edb35c6dfbe09"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vec_8c.html#aed5ad7d877c15eb3915edb35c6dfbe09">vec_len</a> (vec_t v)</td></tr>
+<tr class="memdesc:aed5ad7d877c15eb3915edb35c6dfbe09"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that returns the length of a vector.  <a href="vec_8c.html#aed5ad7d877c15eb3915edb35c6dfbe09">More...</a><br /></td></tr>
+<tr class="separator:aed5ad7d877c15eb3915edb35c6dfbe09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a689cf02ed4ab90561b89614798ed562b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vec_8c.html#a689cf02ed4ab90561b89614798ed562b">vec_capacity</a> (vec_t v)</td></tr>
+<tr class="memdesc:a689cf02ed4ab90561b89614798ed562b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function that returns the capacity of a vector.  <a href="vec_8c.html#a689cf02ed4ab90561b89614798ed562b">More...</a><br /></td></tr>
+<tr class="separator:a689cf02ed4ab90561b89614798ed562b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structvec__meta" id="structvec__meta"></a>
@@ -166,6 +172,34 @@ The number of elements in the vector. </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a689cf02ed4ab90561b89614798ed562b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a689cf02ed4ab90561b89614798ed562b">&#9670;&nbsp;</a></span>vec_capacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t vec_capacity </td>
+          <td>(</td>
+          <td class="paramtype">vec_t&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function that returns the capacity of a vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="vec_8c_source.html#l00120">120</a> of file <a class="el" href="vec_8c_source.html">vec.c</a>.</p>
+
+</div>
+</div>
 <a id="a29f8d42dde5b43c57435f725dea26135"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29f8d42dde5b43c57435f725dea26135">&#9670;&nbsp;</a></span>vec_fini()</h2>
 
@@ -329,6 +363,34 @@ The number of elements in the vector. </td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="vec_8c_source.html#l00057">57</a> of file <a class="el" href="vec_8c_source.html">vec.c</a>.</p>
+
+</div>
+</div>
+<a id="aed5ad7d877c15eb3915edb35c6dfbe09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed5ad7d877c15eb3915edb35c6dfbe09">&#9670;&nbsp;</a></span>vec_len()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t vec_len </td>
+          <td>(</td>
+          <td class="paramtype">vec_t&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A function that returns the length of a vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>The vector object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="vec_8c_source.html#l00112">112</a> of file <a class="el" href="vec_8c_source.html">vec.c</a>.</p>
 
 </div>
 </div>
