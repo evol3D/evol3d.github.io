@@ -1,13 +1,30 @@
 <map id="include/evol/meta/resdef.h" name="include/evol/meta/resdef.h">
-<area shape="rect" id="node1" title=" " alt="" coords="265,5,440,32"/>
-<area shape="rect" id="node2" href="$ev__types_8h.html" title=" " alt="" coords="336,80,481,121"/>
-<area shape="rect" id="node3" href="$core_2evol_8h.html" title=" " alt="" coords="21,177,180,203"/>
-<area shape="rect" id="node6" href="$lualoader_8h.html" title=" " alt="" coords="205,177,391,203"/>
-<area shape="rect" id="node9" href="$modulemanager_8h.html" title=" " alt="" coords="415,177,642,203"/>
-<area shape="rect" id="node10" href="$filesystem_8h.html" title=" " alt="" coords="667,169,785,211"/>
-<area shape="rect" id="node4" href="$evol_8h_source.html" title=" " alt="" coords="5,259,135,285"/>
-<area shape="rect" id="node5" href="$evol_8c.html" title=" " alt="" coords="159,259,266,285"/>
-<area shape="rect" id="node7" href="$lualoader_8c.html" title=" " alt="" coords="291,259,425,285"/>
-<area shape="rect" id="node8" href="$modulemanager_8c.html" title=" " alt="" coords="449,259,624,285"/>
-<area shape="rect" id="node11" href="$filesystem_8c.html" title=" " alt="" coords="656,259,796,285"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1405,5,1579,32"/>
+<area shape="rect" id="node2" href="$ev__types_8h.html" title=" " alt="" coords="1191,80,1337,121"/>
+<area shape="rect" id="node11" href="$core_2evol_8h.html" title=" " alt="" coords="1358,259,1517,285"/>
+<area shape="rect" id="node15" href="$evstore_8h.html" title=" " alt="" coords="1713,177,1890,203"/>
+<area shape="rect" id="node18" href="$modulemanager_8h.html" title=" " alt="" coords="5,259,232,285"/>
+<area shape="rect" id="node25" href="$lua__evutils_8h.html" title=" " alt="" coords="1963,169,2082,211"/>
+<area shape="rect" id="node28" href="$configloader_8h_source.html" title=" " alt="" coords="2259,177,2461,203"/>
+<area shape="rect" id="node3" href="$event_8h_source.html" title=" " alt="" coords="939,177,1106,203"/>
+<area shape="rect" id="node5" href="$eventsystem_8h_source.html" title=" " alt="" coords="885,333,1093,360"/>
+<area shape="rect" id="node6" href="$evolmod_8h_source.html" title=" " alt="" coords="1243,415,1397,442"/>
+<area shape="rect" id="node17" href="$module_8h.html" title=" " alt="" coords="281,177,457,203"/>
+<area shape="rect" id="node20" href="$namespace_8h_source.html" title=" " alt="" coords="558,177,759,203"/>
+<area shape="rect" id="node22" href="$type__import_8h.html" title=" " alt="" coords="1131,169,1283,211"/>
+<area shape="rect" id="node23" href="$filesystem_8h.html" title=" " alt="" coords="1551,169,1670,211"/>
+<area shape="rect" id="node4" href="$eventlistener_8h_source.html" title=" " alt="" coords="885,259,1093,285"/>
+<area shape="rect" id="node10" href="$event_8c_source.html" title=" " alt="" coords="1117,259,1232,285"/>
+<area shape="rect" id="node7" href="$evol_8c.html" title=" " alt="" coords="1109,497,1216,524"/>
+<area shape="rect" id="node8" href="$event__include_8h.html" title=" " alt="" coords="796,408,956,449"/>
+<area shape="rect" id="node9" href="$eventsystem_8c_source.html" title=" " alt="" coords="1044,415,1201,442"/>
+<area shape="rect" id="node12" href="$evol_8h_source.html" title=" " alt="" coords="1409,333,1538,360"/>
+<area shape="rect" id="node14" href="$modulemanager_8c.html" title=" " alt="" coords="1631,333,1806,360"/>
+<area shape="rect" id="node13" href="$namespace__import_8h.html" title=" " alt="" coords="372,408,567,449"/>
+<area shape="rect" id="node16" href="$evstore_8c_source.html" title=" " alt="" coords="1757,259,1883,285"/>
+<area shape="rect" id="node19" href="$module_8c.html" title=" " alt="" coords="307,259,432,285"/>
+<area shape="rect" id="node21" href="$namespace_8c_source.html" title=" " alt="" coords="558,259,709,285"/>
+<area shape="rect" id="node24" href="$filesystem_8c.html" title=" " alt="" coords="1541,259,1681,285"/>
+<area shape="rect" id="node26" href="$configloader_8c_source.html" title=" " alt="" coords="2228,259,2380,285"/>
+<area shape="rect" id="node27" href="$lua__evutils_8c.html" title=" " alt="" coords="2060,259,2204,285"/>
 </map>

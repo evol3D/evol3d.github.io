@@ -1,5 +1,9 @@
 <map id="include/evol/core/evol.h" name="include/evol/core/evol.h">
-<area shape="rect" id="node1" title=" " alt="" coords="61,5,220,32"/>
-<area shape="rect" id="node2" href="$evol_8h_source.html" title=" " alt="" coords="5,80,135,107"/>
-<area shape="rect" id="node3" href="$evol_8c.html" title=" " alt="" coords="159,80,266,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="394,5,553,32"/>
+<area shape="rect" id="node2" href="$evol_8h_source.html" title=" " alt="" coords="217,80,346,107"/>
+<area shape="rect" id="node4" href="$evol_8c.html" title=" " alt="" coords="196,244,303,271"/>
+<area shape="rect" id="node6" href="$eventsystem_8c_source.html" title=" " alt="" coords="453,80,611,107"/>
+<area shape="rect" id="node7" href="$modulemanager_8c.html" title=" " alt="" coords="635,80,810,107"/>
+<area shape="rect" id="node3" href="$evolmod_8h_source.html" title=" " alt="" coords="5,162,160,189"/>
+<area shape="rect" id="node5" href="$namespace__import_8h.html" title=" " alt="" coords="184,155,379,196"/>
 </map>

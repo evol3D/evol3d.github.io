@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['length_50',['length',['../vec_8c.html#ae809d5359ac030c60a30a8f0b2294b82',1,'vec_meta']]],
-  ['log_5fevent_51',['log_Event',['../structlog__Event.html',1,'']]],
-  ['lsb_5ffirst_52',['lsb_first',['../checksum_8c.html#af207d224fec8cae6667cc8a1aadff722',1,'checksum.c']]],
-  ['lualoader_2ec_53',['lualoader.c',['../lualoader_8c.html',1,'']]],
-  ['lualoader_2eh_54',['lualoader.h',['../lualoader_8h.html',1,'']]],
-  ['lualoaderresults_2eh_55',['lualoaderresults.h',['../lualoaderresults_8h.html',1,'']]]
+  ['filesystem_2ec_72',['filesystem.c',['../filesystem_8c.html',1,'']]],
+  ['filesystem_2eh_73',['filesystem.h',['../filesystem_8h.html',1,'']]],
+  ['find_5fcontains_5fr_74',['find_contains_r',['../filesystem_8h.html#a73cc8dbfbcc67a6480212b952027c8fd',1,'find_contains_r(const char *module_dir, const char *query, vec_t *res_modules):&#160;filesystem.c'],['../filesystem_8c.html#acd1b2b22b223bd773756afc8bd868759',1,'find_contains_r(CONST_STR search_dir, CONST_STR query, vec_t *res):&#160;filesystem.c']]]
 ];

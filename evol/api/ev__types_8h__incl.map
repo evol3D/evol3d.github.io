@@ -1,13 +1,15 @@
 <map id="include/evol/common/ev_types.h" name="include/evol/common/ev_types.h">
-<area shape="rect" id="node1" title=" " alt="" coords="449,5,594,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="612,169,676,196"/>
-<area shape="rect" id="node3" title=" " alt="" coords="337,95,412,121"/>
-<area shape="rect" id="node4" href="$resdef_8h.html" title=" " alt="" coords="185,95,314,121"/>
-<area shape="rect" id="node7" href="$vec_8h.html" title=" " alt="" coords="436,95,607,121"/>
-<area shape="rect" id="node9" href="$sds_8h_source.html" title=" " alt="" coords="683,95,803,121"/>
-<area shape="rect" id="node5" href="$ev__macros_8h.html" title=" " alt="" coords="5,169,184,196"/>
-<area shape="rect" id="node6" href="$evolresults_8h.html" title=" " alt="" coords="209,169,407,196"/>
-<area shape="rect" id="node8" title=" " alt="" coords="490,169,553,196"/>
-<area shape="rect" id="node10" title=" " alt="" coords="701,169,787,196"/>
-<area shape="rect" id="node11" title=" " alt="" coords="811,169,879,196"/>
+<area shape="rect" id="node1" title=" " alt="" coords="318,5,463,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="164,169,228,196"/>
+<area shape="rect" id="node3" title=" " alt="" coords="549,95,624,121"/>
+<area shape="rect" id="node4" href="$resdef_8h.html" title=" " alt="" coords="251,95,381,121"/>
+<area shape="rect" id="node8" href="$vec_8h.html" title=" " alt="" coords="5,95,176,121"/>
+<area shape="rect" id="node10" href="$sds_8h_source.html" title=" " alt="" coords="405,95,525,121"/>
+<area shape="rect" id="node13" title=" " alt="" coords="649,95,741,121"/>
+<area shape="rect" id="node5" href="$ev__macros_8h.html" title=" " alt="" coords="359,169,537,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="252,169,335,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="401,244,495,271"/>
+<area shape="rect" id="node9" title=" " alt="" coords="59,169,122,196"/>
+<area shape="rect" id="node11" title=" " alt="" coords="562,169,649,196"/>
+<area shape="rect" id="node12" title=" " alt="" coords="673,169,741,196"/>
 </map>

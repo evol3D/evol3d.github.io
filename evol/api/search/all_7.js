@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['sdsvec_5finit_65',['sdsvec_init',['../ev__types_8h.html#acc71304fe82191070eb9c8c3ccf794a6',1,'ev_types.h']]],
-  ['sdsvec_5ft_66',['sdsvec_t',['../ev__types_8h.html#ae1e1bd08d3726a76cb8f424948b327bc',1,'ev_types.h']]]
+  ['namespace_86',['Namespace',['../structNamespace.html',1,'']]],
+  ['namespace_5fimport_2eh_87',['namespace_import.h',['../namespace__import_8h.html',1,'']]],
+  ['namespacefunction_88',['NamespaceFunction',['../structNamespaceFunction.html',1,'']]],
+  ['namespacefunctionparameter_89',['NamespaceFunctionParameter',['../structNamespaceFunctionParameter.html',1,'']]]
 ];
