@@ -22,7 +22,7 @@ jobs:
         with:
           repository: evol3d/evol
           path: evol_repo
-          ref: v0.2
+          ref: master
           token: ${{ secrets.EVOL_PAT }}
       
       - name: Doxygen Action
